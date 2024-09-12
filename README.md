@@ -1,41 +1,44 @@
 # Panama-Canal-Bond-Research
 
-## We want to extend our heartfelt gratitude to Dr. Thomas J. Sargent and Dr. George Hall for their insights and guidance in this research project. We greatly appreciate the commitment, support, and time they have dedicated to us.
+## We want to extend our heartfelt gratitude to Dr. Thomas J. Sargent and Dr. George Hall for their insights and guidance in this project. We greatly appreciate the commitment, support, and time they have dedicated to us.
 
 ### Authors: Aleska Medrano and Thaddaeus Kiker
 
 ### Abstract:
 
 This study investigates the price dynamics of Panama Canal Bonds issued in 1906, 1908, and 1911, focusing
-on their behavior about historical events and market conditions from the early 20th century. Using
+on their response to historical events and market conditions in the early 20th century. Using
 quantitative economic methods, we analyze time series data and correlations to uncover the influence of World
 War I and subsequent global economic fluctuations on bond prices. Our research poses three key questions:
-(1) Does bond prices correlate with historical events during World War I?
+(1) Do bond price behavior correlate with historical events during World War I?
 (2) Is there a significant divergence in bond price behaviors over time and in response to similar events?
 (3) Why did the Panama Canal Bonds show differing trajectories in their price behavior?
-To offer more insights into this question, we used Panama Canal Bonds and compared them to Railroad Bonds and Liberty Loans at the end of World War I and the ensuing global depression.
+On this report we focused on asnwering the 3rd question. For this purpose, we used Panama Canal Bonds and compared them to Railroad Bonds and Liberty Loans at the end of World War I. 
+The code and corresponding graphs can be find the attached files as jupyter notebooks (.ipynb)
 
 ## Historical Overview of the Panama Canal Bonds:
-The US began construction of the Panama Canal on May 4th, 1904, and concluded it on August 15th, 1914. However, this project was expensive, and the government needed to raise debt to finish it; thus, they issued four series of bonds: the 1906, 1908, and 1911 series, plus the conversion bonds. Nonetheless, this project focused on regular bonds because there was no available data on the behavior of the conversion of Panama Canal bonds.
+The US began the construction of the Panama Canal on May 4th, 1904, and concluded it on August 15th, 1914. However, this project was significantly costly, and the government needed to raise debt to finish it; thus, they issued four series of bonds to serve this purpose: the 1906, 1908, and 1911 series, plus the conversion bonds. Nonetheless, this project focused on the regular bonds because there was no available data on the behavior of the conversion bonds.
 
-1906: The 2%  Panama Canal Bond (1906-36), to the highest bidder caused sales of previous bonds Consol 2s (then quoted at 103.25) and the retirement of circulation accounts. The provision limited the retirement to $3,000,000 per month and prevented the market price of Consol 2s from declining to par. To provide support, the Secretary called for $10,000,000 in special Government bonds and created a market demand for Panama 2s. The average price realized for the $30,000,000 Panama 2s of 1916-1936 was 104.036. To avoid a money stringency incident, all purchasing banks were permitted to retain one-third of the purchase money as Government deposits. This also had a stimulating effect on the price bids for the bonds. 
+1906: The 2%  Panama Canal Bond isued in 1906 had a term to maturity of 30 years(1906-36). Sold to the highest bidder, it caused sales of a group of previous bonds called "Consol 2s" (then quoted at 103.25) and the retirement of circulation accounts. The provision limited the retirement to $3,000,000 per month and prevented the market price of Consol 2s from declining to par. To provide support, the Secretary called for $10,000,000 in special Government bonds and created a market demand for Panama 2s. The average price realized for the $30,000,000 Panama 2s of 1916-1936 was 104.036. To avoid a money stringency incident, all purchasing banks were permitted to retain one-third of the purchase money as Government deposits. This also had a stimulating effect on the price bids for the bonds. 
 
-1908:  The $30,000,000 Panama Canal 2% bonds of 1918-38 offered in December were readily absorbed by the banks, and the Government bond market closed the year with all issues firm.
+1908:  The $30,000,000 Panama Canal 2% bonds with a term to maturity of also 30 years (1918-38) offered in December were readily absorbed by the banks, and the Government bond market closed the year with all issues firm. It looked like the confidence in the project has a big incentive for investors to purchase more of the Panama Canal Bonds.
 
-1911: The treasury offered $50,000,000 Panama Canal 3s, dated June 1, due in 50 years. The bids aggregated $212,085,200, and the average price realized was 102.5825. This produced a premium of $1,291,274 and made the Treasury’s actual interest rate of the transaction 2.9019%. Within a year after their issue, the Panama 3s sold as high as 103 ¼, and in 1945, thirty-four years later, they were quoted as high as 135 ½, yielding 0.65%, solely because they were fully tax-exempt.
+1911: The treasury offered $50,000,000 Panama Canal 3s, dated June 1, with a term to maturity of 50 years. The bids aggregated $212,085,200, and the average price realized was 102.5825. This produced a premium of $1,291,274 and made the Treasury’s actual interest rate of the transaction 2.9019%. Within a year after their issue, the Panama 3s sold as high as 103 ¼, and in 1945, thirty-four years later, they were quoted as high as 135 ½, yielding 0.65%, solely because they were fully tax-exempt. This last bond series issued shows some clear differences in it's structure that made it attractive to investors; thus, the expectation would be for it to out perform the previous Panama Canal Bonds. Yet, through our time series plot somparing the three bonds it is clear that this particular bond behaves in a different way to its competitors but it also falls on a much bigger scale than its counter parts between 1916 and 1924. 
+
+This leads us to try to investigate the divergence in behaviour by comparing it with other bonds issued in a similar time and circumstance.
 
 ## The Panama Canal Bonds and the Railroad Industry
-To provide an accurate overview of the market context of the time, we used a dataset which gives the monthly price for high grade American railroad company bonds during the period we are looking at with the Panama Canal for a comparison to a different class.(F.R. Macaulay, The Movement Of Interest Rates, Bond Yields, And Stock Prices In The United States Since 1856 (NBER, 1938)).***Add this to the citation section in the bottom***
-We found the relationship between the 1906 Series canal bond and the Railroad Bonds Index very interesting, because before the US Railroads got nationalized in December 1917, they were well correlated positively with the canal bond price. However, things get askew during the nationalized time period, but then after 1924 they seem to have a certain level of negative correlation. 
+In the 1900s, the Railroad industry had reached good momentum, given that most of its systems were taking shape and running. Thus, to finish existing projects, it made sense for the federal government to raise debt. Therefore, to provide an accurate overview of the market context of the time, we used a dataset that gives the monthly price for high-grade American railroad company bonds when the Panama Bonds were issued.
+Looking into the time series plots, we found the relationship between the 1906 Series canal bond and the Railroad Bonds Index fascinating because before the US Railroads were nationalized in December 1917, they were well correlated positively with the canal bond price. However, things got askew during the nationalized period, but then after 1924, they seemed to have a certain level of negative correlation. Further regression analysis is required to determine the correlation best fits the two data sets.
 
-Thus, in analyzing the fluctuations of the bond industry, we can see that the railroad industry and the three bond series have similar correlations, including the breakdown at the beginning of WWI. However, after 1917 only 1911 bond keeps this correlation with the railroad bond while the 1906 and 1908 remain constant. This proposes an interesting question in regards to what caused this divergence between the Panama Canal Bond of 1911. 
+Nonetheless, it is important to note that the Railroad industry bonds were very closely correlated with the price behavior of the 1906, and 1908 bonds but again, the 1911 bond appears to be an outlier. Furthermore, we review literature and record from the time the bonds were issued in the book "Concerning U.S. Government Securitie"s by Charles Frederick Childs published in 1947 and some new questions arised, as shown below:
 
 ## Is the answer to the divergence of the Panama Canal Bonds found in 1914?
-The date the Secretary of the Treasury fixed for opening the Federal Reserve Banks for business was November 16th. The country had been divided into twelve districts for the early launching of the new system. The difficulties of the undertaking were aggravated by economic disturbances occasioned by WWI, which extended to every part of the country. 
+The date the Secretary of the Treasury fixed for opening the Federal Reserve Banks for business was November 16th, 1914. For this purpose, the country had been divided into twelve districts for the early launching of the new system. However, the difficulties of the undertaking were aggravated by economic disturbances occasioned by WWI, which extended to every part of the country and might have caused skeptisism in investors about the national debt and were pulling back from other existing bonds like the Liberty or Victory bonds, but thei situation didn't seem to affect the Panama Canal Bonds that much. 
 
 Conditions of uncertainty and perplexity confronting the Board when it began its work in August had a considerable bearing on the policy pursued.  The outbreak of hostilities in Europe immediately led to a severe rupture of international financial relationships throughout the commercial world, involving the temporary breakdown of export trade and the collapse of the financial markets, resulting in a shock to the credit system. European holders of American securities sought to sell them in the New York Market, which was demoralized. Prices declined alarmingly rapidly, and the country was exposed to a severe and disastrous drain of gold. 
 
-Additionally, on February 2nd, 1920, Davis F. Houston made a comment that gives some insight on the price divergence between railroad industry bonds and the Panama Bonds; however, this is not the full explanaition of the story: 
+Additionally, on February 2nd, 1920, Davis F. Houston made a comment that gives some insight on the price divergence between other industry bonds and the Panama Bonds; however, this is not the full explanaition of the story: 
 
 "The Liberty bonds and Victory notes were deeply affected because they were selling below par-value, but it seems that the Panama Canal 1906 bonds were different not only because of the divergent price paths but also because its construction was concluded in 1914, so this investment was going to be backed up by revenues from the Canal operations. Thus, amid economic distress, investors would favor a reliable revenue stream from the Panama Canal instead of an uncertain declining bond."
 
@@ -58,8 +61,9 @@ end of World War I which continued into the short global depression which follow
 Citations: 
 Concerning U.S. Government Securities by Charles Frederick Childs published in 1947.
 New York Times:  on February 2nd, 1920, Davis F. Houston
+(F.R. Macaulay, The Movement Of Interest Rates, Bond Yields, And Stock Prices In The United States Since 1856 (NBER, 1938)).
+https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/rise-of-industrial-america-1876-1900/railroads-in-late-19th-century/#:~:text=By%201900%2C%20much%20of%20the,the%20railroads%20was%20fully%20realized.
 https://www.federalreservehistory.org/essays/liberty-bonds
-
 
 
 
