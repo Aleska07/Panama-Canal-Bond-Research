@@ -1,0 +1,89 @@
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt 
+import smplotlib 
+import seaborn as sns
+
+def return_data(l1_id:int):
+    
+    bondprices = pd.read_csv('/Users/aleskamedrano/Desktop/GitHub/HistoricalEconomics/data/other/BondPrice.csv')
+    l1_ids = bondprices['L1 ID'].values 
+    
+    idx = np.where(l1_ids==l1_id)[0] 
+    idx = idx[0] 
+        
+    row = bondprices.iloc[[idx]] 
+
+    dates = list(row)
+    prices = row.values[0]  
+
+    dates = dates[2:]
+    prices = prices[2:].astype(float)
+
+    dates = pd.to_datetime(dates)
+
+    nan_mask = np.isnan(prices)
+
+    return dates[~nan_mask], prices[~nan_mask]
+canal_bond_date, canal_bond_price = return_data(20132)
+
+not_nan_mask = ~np.isnan(canal_bond_price)
+canal_bond_date = canal_bond_date[not_nan_mask]
+canal_bond_price = canal_bond_price[not_nan_mask]
+
+railroad_df = pd.read_csv('/Users/aleskamedrano/Desktop/GitHub/HistoricalEconomics/data/other/railroad-bond-price.csv')
+# https://fred.stlouisfed.org/series/M11016USM052NNBR
+railroad_bond_date = pd.to_datetime(railroad_df['Date'].values, format="%Y-%m-%d")
+railroad_bond_price = railroad_df['HighGradeRailroadBondPrices'].values 
+railroad_bond_yield = railroad_df['RailroadBondYieldsIndex'].values
+
+interpolated_railroad_price = np.interp(canal_bond_date, railroad_bond_date, railroad_bond_price)
+
+plt.plot(canal_bond_date, canal_bond_price, label='1906 Canal Bond')
+plt.plot(canal_bond_date, interpolated_railroad_price, label='Railroad Bonds Index')
+start_date = pd.to_datetime('1917-12-28')
+end_date = pd.to_datetime('1920-03-01')
+# Highlight the region between the two dates
+plt.axvspan(start_date, end_date, color='blue', alpha=0.2, label='US Railroads Nationalized')
+plt.ylabel("Price")
+plt.xlabel('Month')
+plt.xlim(left=pd.to_datetime('1912-01-01'))
+plt.legend(fontsize='xx-small')
+canal_1906_date, canal_1906_price = return_data(20132)
+canal_1908_date, canal_1908_price = return_data(20133)
+canal_1911_date, canal_1911_price = return_data(20133)
+
+
+
+first_liberty_bond_date, first_liberty_bond_price = return_data(20162)
+second_liberty_bond_date, second_liberty_bond_price = return_data(20166)
+third_liberty_bond_date, third_liberty_bond_price = return_data(20168)
+fourth_liberty_bond_date, fourth_liberty_bond_price = return_data(20169)
+
+plt.plot(canal_1906_date, canal_1906_price, label='1906 Series')
+plt.plot(first_liberty_bond_date, first_liberty_bond_price, label='First Liberty Bond Series')
+plt.plot(fourth_liberty_bond_date, fourth_liberty_bond_price, label='Fourth Liberty Bond Series')
+
+
+#plt.plot(canal_1908_date, canal_1908_price, label='1908 Series')
+#plt.plot(canal_1911_date, canal_1911_price, label='1911 Series')
+plt.xlabel('Month')
+plt.ylabel('Price')
+plt.legend(fontsize='x-small')
+plt.xlim(left=np.min(first_liberty_bond_date), right=np.max(canal_bond_date))
+plt.show()
+plt.clf()
+
+
+plt.plot(first_liberty_bond_date, first_liberty_bond_price, label='First Liberty Bond Series')
+plt.plot(second_liberty_bond_date, second_liberty_bond_price, label='Second Liberty Bond Series')
+plt.plot(third_liberty_bond_date, third_liberty_bond_price, label='Third Liberty Bond Series')
+plt.plot(fourth_liberty_bond_date, fourth_liberty_bond_price, label='Fourth Liberty Bond Series')
+
+plt.legend(fontsize='x-small')
+
+plt.xlim(left=np.min(first_liberty_bond_date), right=np.max(canal_bond_date))
+plt.xlabel('Month')
+plt.ylabel('Price')
+plt.title('Liberty Loans I-IV Series')
+
