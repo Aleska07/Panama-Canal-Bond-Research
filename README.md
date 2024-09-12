@@ -41,6 +41,12 @@ There is no doubt that starting in 1914 WWI took great importance in the map and
 ## Did taxes directly affect the Panama Canal 1911 Bond?
 Diving a little bit deeper into the specifics of the 1911 series Bond. It is interesting that wihtin a year after their issue date, the Panama 3s sold as high as 103.125 and thirty-four years later reached a high of 135.5, yielding .65%, solely because they were FULLY TAX-EXEMPT. In addition, the omission of the priviledge to use these bonds as a basis for national bank circulation put them squarely upon an investment basis. The story suggests that the rapid rise in taxes does not affect the price of the 1911 Bonds because they were tax extempt. 
 
+## Liberty Bonds
+*** ADD CONTEXTUALIZATION**
+
+## Relationship between the Liberty Bonds and Panama Canal Bonds
+As you can see in the above plots, 1st series liberty loan bonds stand out against 2nd-4th (top plot), yet when comparing the 1st and 4th series to the 1906 canal bond prices, we see that the 1906 panama canal bond was much less affected by the onset of the global depression. We believe that the cause of this difference in price is related to the different origins of money based upon which the U.S. Treasury promised to use to repay these bonds. Specifically, I checked some of the archived Annual Reports of the Isthmian Canal Commission (e.g. the one from 1914), and our understanding from these is that the United States government pledged the revenues generated from tolls collected from vessels using the canal as repayment for the bond. Hence, we suspect the Panama Canal Bonds were perceived as more stable due to their association with a significant source of predictable income. In contrast, we wonder if the Liberty Bonds were more impacted by the global depression because they were closely tied to wartime financing and post-war economic adjustments, which introduced significant uncertainty. Overall, we think that investor preferences for stability and the selling pressure on Liberty Bonds during economic hardship further exacerbated their decline in comparison to the canal bonds. 
+
 
 
 
