@@ -15,6 +15,7 @@ War I and subsequent global economic fluctuations on bond prices. Our research p
 (3) Why did the Panama Canal Bonds show differing trajectories in their price behavior?
 On this report we focused on asnwering the 3rd question. For this purpose, we used Panama Canal Bonds and compared them to Railroad Bonds and Liberty Loans at the end of World War I. 
 The code and corresponding graphs can be find the attached files as jupyter notebooks (.ipynb)
+The original data set can be found here: https://github.com/jepayne/US-Federal-Debt-Public/tree/master.
 
 ## Historical Overview of the Panama Canal Bonds:
 The US began the construction of the Panama Canal on May 4th, 1904, and concluded it on August 15th, 1914. However, this project was significantly costly, and the government needed to raise debt to finish it; thus, they issued four series of bonds to serve this purpose: the 1906, 1908, and 1911 series, plus the conversion bonds. Nonetheless, this project focused on the regular bonds because there was no available data on the behavior of the conversion bonds.
