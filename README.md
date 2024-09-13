@@ -1,6 +1,6 @@
 # Panama-Canal-Bond-Research
 
-## We want to extend our heartfelt gratitude to Dr. Thomas J. Sargent and Dr. George Hall for their insights and guidance in this project. We greatly appreciate the commitment, support, and time they have dedicated to us.
+## We want to extend our heartfelt gratitude to Dr. George Hall and Dr. Thomas J. Sargent for their insights and guidance in this project. We greatly appreciate the commitment, support, and time they have dedicated to us.
 
 ### Authors: Aleska Medrano and Thaddaeus Kiker
 
