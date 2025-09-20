@@ -57,7 +57,7 @@ In the plots we created (which you can find in the file called liberty bonds) yo
 ## Conclusion
 
 In conclusion, we found that there are three aspects that make the panama canal bond intriguing. The correlation of the Panama Canal Bond Prices with historical events during World War One, the divergence in behavior between the different Panama Canal Bond Prices over time and in response to various aforementioned events, and the divergence in behavior between some of the Panama Canal Bonds and the Railroad Bond Price Index and Liberty Loans towards the
-end of World War I which continued into the short global depression which followed that war.
+end of World War I which continued into the short global depression which followed that war. Our next steps for the devlopment of the porject are to compile a data set with the news events that are theorize to generate the spikes in prices and perform sensitivity analysis to determine the degree of correlations between them. 
 
 Citations: 
 Concerning U. S. government securities: A condensed review of the nation’s currency, publi by Childs, Charles Frederick. Concerning U. S. Government Securities: A Condensed Review of the Nation’s Currency, Publi by Childs, Charles Frederick - Amazon.ae. (n.d.). https://www.amazon.ae/Concerning-U-Government-Securities-Condensed/dp/1258280485 
